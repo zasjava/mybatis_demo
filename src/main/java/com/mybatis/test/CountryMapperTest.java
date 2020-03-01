@@ -7,13 +7,10 @@ import com.mybatis.pojo.SysPrivilege;
 import com.mybatis.pojo.SysRole;
 import com.mybatis.pojo.SysUser;
 import com.mybatis.typeEnum.Enabled;
-import netscape.security.Privilege;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.jupiter.api.TestTemplate;
 
-import javax.management.relation.Role;
 import java.lang.reflect.Proxy;
 import java.util.*;
 

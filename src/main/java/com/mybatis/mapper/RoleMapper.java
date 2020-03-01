@@ -2,7 +2,6 @@ package com.mybatis.mapper;
 
 import com.mybatis.pojo.SysPrivilege;
 import com.mybatis.pojo.SysRole;
-import netscape.security.Privilege;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

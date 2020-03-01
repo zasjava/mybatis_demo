@@ -20,13 +20,6 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis</artifactId>
       <version>3.3.0</version>
@@ -126,5 +119,20 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <resources>
+      <resource>
+        <directory>src/main/resource/mybatis</directory>
+        <includes>
+          <include>*.xml</include>
+        </includes>
+        <excludes>
+          <exclude>*.yaml</exclude>
+        </excludes>
+      </resource>
+      <resource>
+        <directory>src/main/resources/${profiles.active}</directory>
+        <targetPath>${project.build.directory}/classes/mybatis/mapper</targetPath>
+      </resource>
+    </resources>
   </build>
 </project>
